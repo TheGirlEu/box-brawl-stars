@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎁 Cajas Brawl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Genera tu regalito ✨</h1>
+        <p>Escribe tu mensaje, elige tu caja y cantidad 🎁</p>
+
+        <div id="personalizacion">
+            <textarea id="mensajeInput" rows="3" placeholder="Escribe tu mensaje especial..."></textarea>
+            <select id="tipoCaja">
+                <option value="Caja Brawl">Caja Brawl (1-2)</option>
+                <option value="Caja Grande">Caja Grande (3-4)</option>
+                <option value="Megacaja">Megacaja (5-7)</option>
+            </select>
+            <input type="number" id="cantidad" placeholder="Cantidad" min="1" max="7">
+            <button id="generarBtn">🔗 Generar Link</button>
+        </div>
+
+        <div id="linkResult">
+            <p><strong>🔗 Tu link:</strong></p>
+            <div id="linkCopy"></div>
+        </div>
+
+        <div class="counter-links" id="counterLinks">Links generados: 0</div>
+
+        <a href="https://paypal.me/unicorniouwu" target="_blank">
+            <button class="donate-button"> 💖 Donarme</button>
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
