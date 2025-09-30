@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Establecer la imagen de la caja dependiendo del tipo
     switch (tipoCaja) {
         case 'Caja Brawl':
-            boxImg.src = '/assets/caja-brawl.png'; // Ruta a la imagen de la Caja Brawl
+            boxImg.src = './assets/caja-brawl.png'; // Ruta a la imagen de la Caja Brawl
             break;
         case 'Caja Grande':
-            boxImg.src = '/assets/caja-grande.png'; // Ruta a la imagen de la Caja Grande
+            boxImg.src = './assets/caja-grande.png'; // Ruta a la imagen de la Caja Grande
             break;
         case 'Megacaja':
-            boxImg.src = '/assets/megacaja.png'; // Ruta a la imagen de la Megacaja
+            boxImg.src = './assets/megacaja.png'; // Ruta a la imagen de la Megacaja
             break;
         default:
             boxImg.src = 'caja-brawl.png'; // Imagen por defecto
@@ -68,3 +68,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
